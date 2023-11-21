@@ -1,0 +1,139 @@
+SLIP NO 13
+Q1. Draw a pie chart using R programming for the following datadistribution:
+Digits on
+Dice
+1 2 3 4 5 6 Frequency of getting each number7 2 6 3 4 8
+# Create data for the graph.
+dice<- c(7, 2, 6, 3, 4, 8)
+labels <- c("1", "2", "3", "4","5","6")
+# Plot the chart.
+pie(dice, labels)
+
+Q2. Write a Python program to read “StudentsPerformance.csv” file. Solvefollowing:
+- To display the shape of dataset.
+- To display the top rows of the dataset with their columns.Note: Download
+dataset from following link :
+(https://www.kaggle.com/spscientist/students-performance-inexams?
+select=StudentsPerformance.csv)
+{ 
+"nbformat": 4, 
+"nbformat_minor": 0, 
+"metadata": { 
+"colab": { 
+"name": "Data Mining Assignment-3 SET-B-1.ipynb", 
+"provenance": [] 
+}, 
+"kernelspec": { 
+"name": "python3", 
+"display_name": "Python 3" 
+}, 
+"language_info": { 
+"name": "python" 
+} 
+}, 
+"cells": [ 
+{ 
+"cell_type": "markdown", 
+"source": [ 
+"### SET-B\n", 
+"\n", 
+"1) Write a Python program to read \"StudentsPerformance.csv\" file. solve the 
+following :\n", 
+"- To display the shape of dataset.\n", 
+"- To display the top rows of the dataset with their columns.\n", 
+"- To display the number of rows randomly.\n", 
+"- To display the number of columns and names of the columns.\n", 
+"- Note : Download dataset from following link:\n", 
+"(https://www.kaggle.com/spscientist/students-performanceinexams?select=StudentsPerformance.csv)" 
+], 
+"metadata": { 
+"id": "0hhW5uEs_wK2" 
+} 
+}, 
+{ 
+"cell_type": "code", 
+"source": [ 
+"# Import required libraries\n", 
+"import numpy as np\n", 
+"import matplotlib.pyplot as plt\n", 
+T.Y.B.C.A.(Science) 
+DSE II BCA 357- Laboratory (Data Mining) Workbook 
+Savitribai Phule Pune University 
+Answers 
+Answers Prepared By: Lab Book Team 
+"import pandas as pd\n" 
+], 
+"metadata": { 
+"id": "W61H7Yo7E_sP" 
+}, 
+"execution_count": 2, 
+"outputs": [] 
+}, 
+{ 
+"cell_type": "code", 
+"source": [ 
+"# Read the downloaded dataset\n", 
+"store_data=pd.read_csv('StudentsPerformance.csv',header=None)" 
+], 
+"metadata": { 
+"id": "uC2jGgIFFVa3" 
+}, 
+"execution_count": null, 
+"outputs": [] 
+}, 
+{ 
+"cell_type": "code", 
+"source": [ 
+"# To display the shape of dataset. (By Using shape method)\n", 
+"store_data.shape" 
+], 
+"metadata": { 
+"id": "wU6-JdtCF3ar" 
+}, 
+"execution_count": null, 
+"outputs": [] 
+}, 
+{ 
+"cell_type": "code", 
+"source": [ 
+"# To display the top rows of the dataset with their columns.(By using head method\n", 
+"store_data.head()" 
+], 
+"metadata": { 
+"id": "xHtDSrSsGT2v" 
+}, 
+"execution_count": null, 
+"outputs": [] 
+}, 
+{ 
+"cell_type": "code", 
+"source": [ 
+"# To display the number of rows randomly.(By using sample method)\n", 
+"store_data.sample(10)" 
+T.Y.B.C.A.(Science) 
+DSE II BCA 357- Laboratory (Data Mining) Workbook 
+Savitribai Phule Pune University 
+Answers 
+Answers Prepared By: Lab Book Team 
+], 
+"metadata": { 
+"id": "2Gwsi4oTG9QN" 
+}, 
+"execution_count": null, 
+"outputs": [] 
+}, 
+{ 
+"cell_type": "code", 
+"source": [ 
+"# To display the number of columns and names of the columns. (By using columns 
+method)\n", 
+"store_data.columns()" 
+], 
+"metadata": { 
+"id": "ZdXc3aoUHO80" 
+}, 
+"execution_count": null, 
+"outputs": [] 
+} 
+] 
+}
